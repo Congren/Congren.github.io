@@ -1,0 +1,1 @@
+The style sheets are in this folder. Controls how the website looks and reacts
