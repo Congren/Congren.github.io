@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+    <div id="professional">
+        <h1>Professional Core</h1>
+        <ul>
+            <li>All of the Core Courses must be completed to fulfill this requirement.</li>
+            <li>6-12 units of the Core Electives are needed to complete this requirement</li>
+        </ul>
+        <br>
+        <h4>Core Courses</h4>
+        <table id="professionalCore" class="table table-hover">
+            <tr>
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Unit</th>
+                <th>Year</th>
+                <th></th>
+            </tr>
+
+            <tr id="profcore1">
+                <td>67-250</td>
+                <td>The Information Systems Milieux</td>
+                <td>9</td>
+                <td>Freshman Spring</td>
+                <td><b>+</b></td>
+                <tr>
+                <td colspan=5 id="profcoredrop1" style="display:none;">
+                <p>Information systems (IS) are changing work practices, reshaping organizations, transforming cultures, 
+                    and giving new meaning to the ways we see the world. This course is designed to help students understand the role of 
+                    IS in modern society and the means by which these systems are created. It provides not only a framework for understanding 
+                    information and information systems, but also a language to identify their dynamic complexities and inter-dependencies. 
+                    Topics include: current trends in IS, structured approaches to the creation of IS, corporate IS competitive advantage, 
+                    business process improvements/re-engineering, eCommerce and the digital economy, knowledge management, decisions support 
+                    systems, and the implications of IS for people, organizations and society. Classes will use a combination of lectures, 
+                    class discussions, reading assignments, case studies, group projects, and "hands-on" work in database design. This course 
+                    is a required professional core course for IS freshmen only.</p>
+                </td>
+                </tr>
+
+            <tr id="profcore2">
+                <td>67-262</td>
+                <td>Database Design and Development</td>
+                <td>9</td>
+                <td>Sophomore Fall</td>
+                <td><b>+</b></td>
+                <tr>
+                    <td colspan=5 id="profcoredrop2" style="display:none;">
+                        <p>Data driven decision making is a core process of organizations. In this class students will study the principles of database 
+                        management systems, their design, and development. Recent alternatives to the classical relational model will also be examined.
+                            This course is a required professional core course and is open only to sophomores in the IS major who have completed 67-250 or 
+                            equivalent.</p>
+                        <p>Prerequisites: (15-121 or 15-112 or 15-122) and 67-250</p>
+                    </td>
+                </tr>
+
+            <tr id="profcore3">
+                <td>67-272</td>
+                <td>Application Design and Development</td>
+                <td>9</td>
+                <td>Sophomore Spring</td>
+                <td><b>+</b></td>
+                <tr>
+                    <td colspan=5 id="profcoredrop3" style="display:none;">
+                        <p>This course provides students with the concepts and techniques to design and develop 
+                            software applications, and to understand the design process. Students will learn the 
+                            importance of user-centered design and will develop a prototype of a web application 
+                            as a course project. In the process of developing the application, students will learn 
+                            how to design and create relational databases, how to acquire competency in new 
+                            programming languages quickly, how to use the Model-View-Controller pattern to develop 
+                            software applications, how to ensure technical quality in software development, and how 
+                            to apply principles of user-centered design. This course is a required professional core 
+                            course and is open only to sophomores and juniors in the IS major who have completed 
+                            67-250 or equivalent.</p>
+                        <p>Prerequisites: (15-122 or 15-121) and 67-262</p>
+                    </td>
+                </tr>
+
+            <tr id="profcore4">
+                <td>67-373</td>
+                <td>Software Development Project</td>
+                <td>12</td>
+                <td>Junior Spring</td>
+                <td><b>+</b></td>
+                <tr>
+                    <td colspan=5 id="profcoredrop4" style="display:none;">
+                        <p>In this course, students design and implement a usable information system for a client. 
+                            The client may be affiliated with the university, government, business, or non-profit 
+                            agency. Students will be assigned to teams to work on these projects, and will produce 
+                            operational, fully documented and tested, computer-based information systems. The projects 
+                            will be supervised by CMU faculty and, when possible, by project clients.</p>
+                        <p>Prerequisite: 67-272</p>
+                    </td>
+                </tr>
+
+            <tr id="profcore5">
+                <td>67-475</td>
+                <td>Innovation in Information Systems</td>
+                <td>12</td>
+                <td>Senior Fall</td>
+                <td><b>+</b></td>
+                <tr>
+                    <td colspan=5 id="profcoredrop5" style="display:none;">
+                        <p>In this capstone team-based course, IS seniors design and implement an information systems 
+                            solution to meet a real-world need or opportunity. Innovation, entrepreneurship, planning, 
+                            project management, and risk taking will all be emphasized. Students will be challenged to 
+                            produce "proof of concept" systems or prototypes that are fully documented, tested, and 
+                            ready to present for external evaluation. This course is a required professional core 
+                            course and is open only to seniors in the IS major who have completed 67-373.</p>
+                        <p>Prerequisite: 67-373</p>
+                    </td>
+                </tr>
+        </table>
+
+        <br>
+
+        <h4>Core Electives</h4>
+        <button id="sortTable" onclick="sortTable()">sort</button><br>
+        <br>
+        <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Filter by semester"><br>
+        <br>
+        <table id="professionalElec" class="table table-hover">
+            <tr>
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Unit</th>
+                <th>Semester</th>
+                <th></th>
+            </tr>
+            <tr id="profelec1">
+                <td>19-402</td>
+                <td>Telecommunications Technology and Policy for the Internet Age</td>
+                <td>12</td>
+                <td>Intermittent</td>
+                <td><b>+</b></td>
+                <tr>
+                    <td colspan=5 id="profelecdrop1" style="display:none;">
+                        <p>Modern telecommunications is the nervous system of society. The Internet and wireless 
+                            communications have transformed every aspect of our modern life. This course provides a 
+                            comprehensive introduction to basic principles of telecommunications technology and the 
+                            legal, economic, and regulatory environment of todays networks. Topics covered include 
+                            the fundamentals of communication network technologies, including video, voice, and 
+                            computer networks; principles behind telecommunications regulation from common carrier 
+                            law and natural monopoly to information diversity, privacy and national security; traffic 
+                            differentiation on the Internet and the debate over network neutrality; universal service 
+                            and the digital divide; mergers, antitrust, and the changing industrial structure of the 
+                            communications sector. We will explore current topical questions such as the future of 
+                            competition in broadband access; the shift of entertainment video from cable and 
+                            satellite to Internet delivery; how cloud computing concepts are transforming networks; 
+                            and communications support for the Internet of Things. Comparison with European 
+                            approaches to communications regulation. Special emphasis on how new technologies have 
+                            altered, and are altered by, regulation. Junior or Senior standing required.</p>
+                        <p>Prerequisite: 73-100</p>
+                    </td>
+                </tr>
+
+            <tr id="profelec2">
+                <td>67-202</td>
+                <td>The Softer Side of Software</td>
+                <td>6</td>
+                <td>Spring</td>
+                <td><b>+</b></td>
+                <tr>
+                    <td colspan=5 id="profelecdrop2" style="display:none;">
+                        <p>  Even the best technologist has to rely on soft skills in their lives and jobs–whether they want a team member to take their constructive feedback or an angel investor to understand why their product is better than the competition. Classes will cover delivering engaging presentations, writing emails co-workers want to read, conducting meetings and workshops, delivering criticism and more.This mini course requires students to participate in a combination of readings, discussions, in-class simulations, theater exercises, individual and group projects to practice soft skills. This course has some space available to students outside of the Information Systems program.</p>
+                    </td>
+                </tr>
+            </tr>  
+
+            <tr id="profelec3">
+                <td>67-240</td>
+                <td>Mobile Web Design and Development</td>
+                <td>9</td>
+                <td>Fall/Spring</td>
+                <td><b>+</b></td>
+                <tr>
+                    <td colspan=5 id="profelecdrop3" style="display:none;">
+                        <p>The Mobile Web Design and Development course provides a solid web design and development foundation focusing on responsive and user-centered design, and client-side components. Students explore the current standards and best practices of web design. Throughout the course, students work with HTML5, CSS3, Twitter Bootstrap, and Javascript, and learn how the various web components function together. The course utilizes a hands-on approach to guide students through learning and understanding the design and development process. This course is primarily designed for students with minimal technical experience. By the end of the course, students will be able to plan, design, and implement a basic functioning mobile web site/ app.</p>
+                        <p>Prerequisites: 15-104 Min. grade C or 15-112 Min. grade C</p>
+                    </td>
+                </tr>
+
+            <tr id="profelec4">
+                <td>67-279</td>
+                <td>Introduction to Geographical Information Systems</td>
+                <td>6</td>
+                <td>Fall</td>
+                <td><b>+</b></td>
+                <tr>
+                    <td colspan=5 id="profelecdrop4" style="display:none;">
+                        <p>Geographical Information Systems (GIS) allow us to visualize information that uses location. Through displaying layers of information in computer generated maps, we can see, analyze, understand and explore spatial patterns and relationships in new and novel ways. People in many different fields use Geographical Information Systems in their work: for visualizing the environment, human development, demographics, traffic and transportation, public health and many more. In this course, students will learn the basics of GIS through hands-on experience with popular mapping tools. Sources of data, principles of coordinate and projection systems and elementary geo-analysis techniques will be included. Upon completion of the course, students will have the background to begin using GIS techniques in their own areas of interest and will be prepared for further study in advanced GIs courses.</p>
+                    </td>
+                </tr>
+        </table>
+
+        <p><b>OR 15-xxx any Computer Science course above 15-121 with prerequisite of 15-112 or higher</b></p>
+        <p><b>OR 05-xxx any Human-Computer Interaction course</b></p>
+        <br>
+    </div>
+
+</body>
+
+</html>

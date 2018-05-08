@@ -1,1 +1,0 @@
-The pictures I used are in this folder along with a txt file specifying where I got each picture.

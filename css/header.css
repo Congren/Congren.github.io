@@ -1,0 +1,163 @@
+body {
+    background-color: #fff;
+    font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
+    font-size: 0.6em;
+    line-height: 1.4;
+    height: 100%;
+    max-width: 1400px;
+    position: relative;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: thin;    
+}
+
+p {
+    margin: 0px;
+    font-size: .9em !important;
+    font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
+    font-weight:lighter;
+    line-height:1.4em !important;
+}
+
+
+
+.headerimg {
+    /* IS img style */
+    position: relative;
+    text-align: center;
+    background: rgba(0,0,0,0.60);
+    border: 1px solid #979797;
+    width: 100%;
+    max-width: 1400px;
+}
+
+#pageTitle {
+    /* IS Core Requirements: */
+    font-family: OpenSans-Semibold;
+    font-size: 2.5em !important;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 207px;
+    left: 6%;
+    font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
+    font-weight:normal;
+}
+
+.coreTitle {
+    /* Professional Core: */
+    font-family: OpenSans-Bold;
+    font-size: 1em !important;
+    color: #FFFFFF;
+    letter-spacing: 1.2px !important;
+    position: absolute;
+    top: 325px;
+    font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
+    font-weight:normal;
+    
+}
+
+#CT1{
+    left: 6%;
+    padding: 1em 0 .65em;
+}
+
+#CT2{
+    left: 28.7%;
+}
+
+#CT3{
+    left: 51.48%;
+}
+
+.coreDescription {
+    /* Requires 2 Core Cour: */
+    font-family: OpenSans-Light;
+    font-size: 15px;
+    color: #FFFFFF;
+    letter-spacing: 1.25px;
+    position: absolute;
+    line-height: 1.5em !important;
+    top: 375px;
+    width: 240px;
+}
+
+#CD1{
+    left: 6%;    
+}
+
+#CD2{
+    left: 28.7%;
+}
+
+#CD3{
+    left: 51.48%;
+}
+
+
+.courseListButton {
+    /* Rectangle 3: */
+    border: 1px solid ;
+    border-radius: 8px;
+    background: transparent;
+    padding: 4px;
+    /* Course List: */
+    font-family: OpenSans-Semibold;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 1.33px;
+    position: absolute;
+    width: 140px;
+    top: 595px;
+}
+
+#CLB1{
+    left: 77px;
+}
+
+#CLB2{
+    left: 367px;
+}
+
+#CLB3{
+    left: 659px;
+}
+
+
+.externalLink {
+    /* Rectangle 4: */
+    border: 1px solid #E7E6E6;
+    background-color: transparent;
+    /* Academic Audit: */
+    font-family: OpenSans-Bold;
+    font-size: 15px;
+    color: #FFFFFF;
+    letter-spacing: 1.20px;
+    text-align: center;
+    padding: 20px;
+    left: 960px;
+    position: absolute;
+    width: 200px;
+}
+
+#EL1 {
+    top: 300px;
+}
+
+#EL2 {
+    top: 380px;
+}
+
+#EL3 {
+    top: 480px;
+}
+
+#EL4 {
+    top: 560px;
+}
+
+
+
+
+
