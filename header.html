@@ -2,34 +2,108 @@
 <html>
 <head>
     <title>IS</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
     <link href="css/header.css" rel="stylesheet" type="text/css" media="screen"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
     <script src="js/scripts.js"></script>
+    
 
 </head>
 
 <body>
-    <img src="images/is.png" alt="IS header" class="headerimg">
-    
-    <h1 id="pageTitle">IS Core Requirements</h1>
+    <div class="blocking">
+        <img src="images/is-mobile.png" alt="IS header" class="headerimgMobile">
+        <img src="images/is.png" alt="IS header" class="headerimg">
+        <h1 id="mobileTitle">IS Core Requirements</h1>
+        <div id="main-content">
+            <h1 id="pageTitle">IS Core Requirements</h1>
+            <div id="professional">
+                <h2 class="coreTitle" id="CT1">Professional Core</h2>
+                <p class="coreDescription" id="CD1">Students learn the basic skills necessary to analyze, design, implement and test high-quality, cost effective information systems. The professional core consists of six main courses.</p>
+            </div>
+            <div id="disciplinary">
+                <h2 class="coreTitle" id="CT2">Disciplinary Core</h2>
+                <p class="coreDescription" id="CD2">Students study to understanding and solve problems in information systems. The disciplinary core consists of three main courses.</p>
+            </div>
+            <div id="header-content">
+                <h2 class="coreTitle" id="CT3">Content Area</h2>
+                <p class="coreDescription" id="CD3">IS students also complete three courses within one Content Area. The content areas are designed to provide students an opportunity to gain additional depth in a focused area. Currently, twelve content areas are available.</p>
+            </div>
+        </div>
+        <div id="externals">
+            <button class="externalLink" id="EL1"><a href="https://enr-apps.as.cmu.edu/audit/audit">Academic Audit</button>
+            <button class="externalLink" id="EL2"><a href="http://coursecatalog.web.cmu.edu/#text" target="_blank">Undergraduate Course Catalog</a></button>
+            <button class="externalLink" id="EL3"><a href="#sample">Sample Plan</a></button>
+            <button class="externalLink" id="EL4" ><a href="" data-toggle="modal" data-target="#modalContactForm">Contact IS Advisors</a></button>
+            
+        </div>
+        <div id="course-buttons">
+                <button class="courseListButton" id="CLB1">Course List</button>
+                <button class="courseListButton" id="CLB2">Course List</button>
+                <button class="courseListButton" id="CLB3">Course List</button>
+        </div>
+<!--
+        <div id="mobile-buttons" class="form-group">
+            <select id="selectView" class="form-control" >
+              <option selected="selected" value="sample">Sample Schedule</option>
+              <option value="professional">Professional Core</option>
+              <option value="disciplinary">Disciplinary Core</option>
+              <option value="content">Content Area</option>
+            </select>
+        </div>
+--> 
+        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Contact an IS Advisor</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="form-group row">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control" id="name" placeholder="Your name">
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Your email">
+                    </div>
+                </div>
 
-    <h2 class="coreTitle" id="CT1">Professional Core</h2>
-    <p class="coreDescription" id="CD1">Requires 2 Core Courses and at least 6 units of Core Electives</p>
-    <button class="courseListButton" id="CLB1">Course List</button>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>IS Academic Advisor</option>
+                        <option value="1">Gary Dilisio - IS Principal Academic Advisor</option>
+                        <option value="2">Brandy Wilson - IS Academic Advisor</option>
+                      </select>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <i class="fa fa-pencil prefix grey-text"></i>
+                    <div class="col-sm-10">
+                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                    </div>
+                </div>
 
-    <h2 class="coreTitle" id="CT2">Disciplinary Core</h2>
-    <p class="coreDescription" id="CD2">Requires one course from Professional Communications,  Quantative Analysis &amp; Research Methods, and Organizations, Policy  Social Science</p>
-    <button class="courseListButton" id="CLB2">Course List</button>
-
-    <h2 class="coreTitle" id="CT3">Content Area</h2>
-    <p class="coreDescription" id="CD3">Requires a minimum of 27 units total from ONE of the main content areas</p>
-    <button class="courseListButton" id="CLB3">Course List</button>
-
-    <button class="externalLink" id="EL1">Academic Audit</button>
-    <button class="externalLink" id="EL2">Undergraduate Course Catalog</button>
-    <button class="externalLink" id="EL3">Sample Plan</button>
-    <button class="externalLink" id="EL4">Contact IS Advisors</button>
-
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-unique">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
 </body>
 </html>
 

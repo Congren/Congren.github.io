@@ -1,163 +1,292 @@
+body{
+    overflow-x:hidden;
+}
+a:link {
+    text-decoration: none !important;
+}
+#externals button a:link {
+    text-decoration: none !important;
+}
+#externals a:link {
+    color: #FFF !important;
+    text-decoration: none !important;
+}
+
+/* visited link */
+#externals a:visited {
+    text-decoration:none !important;
+    color: #FFF !important;
+}
+
+/* mouse over link */
+#externals a:hover {
+    color: #FFF !important;
+    text-decoration: none !important;
+}
+
+/* selected link */
+#externals a:active {
+    color: #FFF !important;
+    text-decoration: none !important;
+}
+tbody{
+    display:table;
+    width:100%;
+}
+thead{
+    display:table;
+    width:100%;
+}
+@media (max-width:801px)  { 
+    
+    #mobileTitle{
+        font-family: OpenSans-Semibold;
+        font-size: 6vw !important;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        top: 207px;
+        text-align:center;
+        font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
+        font-weight:normal;
+        padding-top:7%;
+    }
+    .headerimg{
+        display:none;
+        
+    }
+    .headerimgMobile{
+        position:absolute;
+        text-align: center;
+        background: rgba(0,0,0,0.60);
+        border: 1px solid #979797;
+        width: 100%;
+        height:auto;
+        z-index:-1;
+        min-width:900px;
+    }
+    #externals{
+        display:none;
+    }
+    #main-content{
+        display:none;
+    }
+    #course-buttons{
+        display:none;
+    }
+    #
+}
+@media (max-width:600)  { 
+    #mobileTitle{
+        font-family: OpenSans-Semibold;
+        font-size: 6vw !important;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        top: 207px;
+        text-align:center;
+        font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
+        font-weight:normal;
+        margin-top:5%;
+    }
+   
+    
+}
+@media (max-width:515px)  { 
+    #mobileTitle{
+        font-family: OpenSans-Semibold;
+        font-size: 6vw !important;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        top: 207px;
+        text-align:center;
+        font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
+        font-weight:normal;
+        margin-top:7%;
+    }
+    
+    
+}
 body {
+    display:block;
     background-color: #fff;
     font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
     font-size: 0.6em;
     line-height: 1.4;
-    height: 100%;
     max-width: 1400px;
     position: relative;
-    margin-top: 0px;
+    margin-top: 0px !important;
     margin-left: auto;
     margin-right: auto;
-    font-style: thin;    
+    font-style: thin;   
 }
 
+#main-content{
+}
+.blocking{
+    display:block;
+    overflow:hidden;
+}
+
+@media (min-width:801px)  { 
+    #mobile-buttons{
+        display:none;
+    }
+    #mobileTitle{
+        display:none;
+    }
+    .headerimgMobile{
+        display:none;
+    }
 p {
     margin: 0px;
-    font-size: .9em !important;
+    font-size: 1.2vw !important;
     font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
     font-weight:lighter;
     line-height:1.4em !important;
+    color: #FFFF;
+    letter-spacing: .8px;
+
+    padding-top:3%;
 }
-
-
 
 .headerimg {
     /* IS img style */
-    position: relative;
+    position: absolute;
     text-align: center;
     background: rgba(0,0,0,0.60);
     border: 1px solid #979797;
     width: 100%;
-    max-width: 1400px;
+    height:auto;
+    z-index:-1;
+    min-width:900px;    
 }
+
 
 #pageTitle {
-    /* IS Core Requirements: */
     font-family: OpenSans-Semibold;
-    font-size: 2.5em !important;
+    font-size: 3vw !important;
     color: #FFFFFF;
     letter-spacing: 1px;
-    position: absolute;
     top: 207px;
-    left: 6%;
+    left: 10%;
     font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
     font-weight:normal;
+    padding-top:7%;
+    padding-left:8%;
 }
-
+    .coreDescription{
+        color:#FFF
+    }
 .coreTitle {
-    /* Professional Core: */
+    display:inline;
     font-family: OpenSans-Bold;
-    font-size: 1em !important;
+    font-size: 1.5vw !important;
     color: #FFFFFF;
     letter-spacing: 1.2px !important;
-    position: absolute;
-    top: 325px;
     font-family: open-sans, Helvetica, Verdana, Geneva, sans-serif !important;
     font-weight:normal;
     
 }
+#professional{
+    width:32%;
+    float:left;
+    padding-left:8%;
+    margin:auto;
+    height:100%;
+    position:relative;
 
-#CT1{
-    left: 6%;
-    padding: 1em 0 .65em;
+}
+#disciplinary{
+    width:30%;
+    float:left;
+    padding-left:5%;
+}
+#header-content{
+    width:30%;
+    float:left;
+    padding-left:4%;
 }
 
-#CT2{
-    left: 28.7%;
-}
-
-#CT3{
-    left: 51.48%;
-}
-
-.coreDescription {
-    /* Requires 2 Core Cour: */
-    font-family: OpenSans-Light;
-    font-size: 15px;
-    color: #FFFFFF;
-    letter-spacing: 1.25px;
-    position: absolute;
-    line-height: 1.5em !important;
-    top: 375px;
-    width: 240px;
-}
-
-#CD1{
-    left: 6%;    
-}
-
-#CD2{
-    left: 28.7%;
-}
-
-#CD3{
-    left: 51.48%;
-}
-
-
+#course-buttons{
+        width:70%;
+        display:inline;
+    }
 .courseListButton {
-    /* Rectangle 3: */
     border: 1px solid ;
     border-radius: 8px;
     background: transparent;
     padding: 4px;
-    /* Course List: */
+    text-align:center;
     font-family: OpenSans-Semibold;
-    font-size: 13px;
+    font-size: 1.25vw;
     color: #FFFFFF;
-    letter-spacing: 1.33px;
-    position: absolute;
-    width: 140px;
-    top: 595px;
+    letter-spacing: 1.25px;
+    bottom:0px;
 }
-
 #CLB1{
-    left: 77px;
+    margin-left:7%;
+    width:10%;
+    float:left;
 }
 
 #CLB2{
-    left: 367px;
+    margin-left:12.5%;
+    width:10%;
+    float:left;
 }
 
 #CLB3{
-    left: 659px;
+    width:10%;
+    float:left;
+    margin-left:14%;
 }
-
-
+    #main-content{
+        width:75%;
+        float:left;
+    }
+    #externals{
+        height:60%;
+    }
 .externalLink {
-    /* Rectangle 4: */
     border: 1px solid #E7E6E6;
     background-color: transparent;
-    /* Academic Audit: */
     font-family: OpenSans-Bold;
     font-size: 15px;
     color: #FFFFFF;
     letter-spacing: 1.20px;
     text-align: center;
-    padding: 20px;
-    left: 960px;
-    position: absolute;
-    width: 200px;
-}
+    padding: 1%;
+    width: 14%;
+    display:block;
+    font-size:1.3vw;
+    margin-bottom: 2%;
+    }
 
 #EL1 {
-    top: 300px;
+    margin-top:5%;
+    
 }
 
 #EL2 {
-    top: 380px;
+
 }
 
 #EL3 {
-    top: 480px;
+
 }
 
 #EL4 {
-    top: 560px;
 }
 
 
+
+
+*/
+
+/*
+
+*/
+
+}
 
 
 

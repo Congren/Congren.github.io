@@ -2,8 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
@@ -12,13 +11,24 @@
 <body>
     <div w3-include-html="nav.html" class="cmu"></div>
     <div w3-include-html="header.html"></div>
+    <div id="mobile-buttons" class="form-group">
+            <select id="selectView" class="form-control" >
+              <option selected="selected" value="sample">Sample Schedule</option>
+              <option value="professional">Professional Core</option>
+              <option value="disciplinary">Disciplinary Core</option>
+              <option value="content">Content Area</option>
+            </select>
+        </div>
+    <div id="buttons">
     <button id="professionalBtn">Professional Core</button>
     <button id="disciplinaryBtn">Disciplinary Core</button>
     <button id="contentBtn">Content Area</button>
+    </div>
     <div id="info">
         <div id="prof-area" w3-include-html="professional.html" style="display:none;"></div>
         <div id="disc-area" w3-include-html="disciplinary.html" style="display:none;"></div>
         <div id="content-area" w3-include-html="contentarea.html" style="display:none;"></div>
+        <hr>
         <div w3-include-html="sample.html">
         </div>
     </div>
